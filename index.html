@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+    <style>
+        body{
+            background-color: rgb(195, 245, 241);
+        }
+        
+        .face{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            bottom: 150px;
+            height: 40px;
+            width: 65px;
+            background: black;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .head{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            bottom: 150px;
+            height: 75px;
+            width: 100px;
+            z-index: -1;
+            background: white;
+            border-top-left-radius: 60px;
+            border-top-right-radius: 60px;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+
+        }
+        .body{
+            position: absolute;
+            top: 60px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            bottom:0px;
+            height: 120px;
+            width: 115px;
+            background: white;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 60px;
+            border-bottom-left-radius: 60px;
+
+        }
+        .left{
+            position: absolute;
+            top: 0px;
+            left: 0;
+            right: 230px;
+            margin: auto;
+            bottom: 25px;
+            height: 30px;
+            width: 115px;
+            background: white;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 60px;
+            border-bottom-left-radius: 60px;
+            animation: hand 1s linear infinite;
+
+        }
+        .right{
+            position: absolute;
+            top: 80px;
+            left: 155px;
+            right: 0px;
+            margin: auto;
+            bottom: 25px;
+            height: 30px;
+            width: 115px;
+            background: white;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 60px;
+            border-bottom-left-radius: 20px;
+            transform: rotateZ(90deg);
+        }
+        @keyframes hand {
+            0%{
+               transform: translateY(-40px) rotateZ(45deg); 
+            } 
+            50%{
+               transform: translateY(0px) rotateZ(0deg); 
+            }
+            100%{
+               transform: translateY(-40px) rotateZ(45deg); 
+            }
+                       
+        }
+        .lefteye{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 25px;
+            bottom: 150px;
+            margin: auto;
+            background: repeating-linear-gradient(blue 70%,#002966 80%,blue);
+            height: 8px;
+            width: 10px;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+             
+        }
+        .righteye{
+            position: absolute;
+            top: 0;
+            left: 25px;
+            right: 0px ;
+            bottom: 150px;
+            margin: auto;
+            background: repeating-linear-gradient(blue 70%,#002966 80%,blue);
+            height: 8px;
+            width: 10px;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        .mouth{
+            position: absolute;
+            top: 0;
+            left: 25px;
+            right: 25px ;
+            bottom: 125px;
+            margin: auto;
+            background: repeating-linear-gradient(blue 70%,#002966 80%,blue);
+            height: 8px;
+            width: 25px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+
+        <div class="face"></div>
+        <div class="head"></div>
+        <div class="body"></div>
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="lefteye"></div>
+        <div class="righteye"></div>
+        <div class="mouth"></div>
+    
+</body>
+</html>
